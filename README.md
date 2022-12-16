@@ -10,7 +10,7 @@ Small snippet from document:
   
 ```
 * Enter cd [project]
-* Run `flutter build apk --split-per-abi`<br>
+* Run: flutter build apk --split-per-abi
 (The flutter build command defaults to --release.)
   
 This command results in three APK files:
