@@ -2,10 +2,24 @@
 Repository for containing documentation, images, and videos for mobile applications.  Can be referenced in README.md files.
 
 # FLUTTER PUBLISH ANDROID APK
-## ANDROID DEPLOYMENT
+## [ANDROID DEPLOYMENT](https://docs.flutter.dev/deployment/android)
 
-* [docs.flutter.dev - Android Deployment](https://docs.flutter.dev/deployment/android)
-### [BUILD AN APK](https://docs.flutter.dev/deployment/android#build-an-apk)<br>
+[Updating the app’s version number](https://docs.flutter.dev/deployment/android#updating-the-apps-version-number)
+The default version number of the app is `1.0.0`. To update it, navigate to the `pubspec.yaml` file and update the following line:
+
+`version: 1.0.0+1`
+
+The version number is three numbers separated by dots, such as `1.0.0` in the example above, followed by an optional build number such as `1` in the example above, separated by a `+`.
+
+Both the version and the build number can be overridden in Flutter’s build by specifying `--build-name` and `--build-number`, respectively.
+
+In Android, `build-name` is used as `versionName` while `build-number` used as `versionCode`. For more information, check out [Version your app](https://developer.android.com/studio/publish/versioning) in the Android documentation.
+
+When you rebuild the app for Android, any updates in the version number from the pubspec file will update the `versionName` and `versionCode` in the `local.properties` file.
+
+----
+
+## [BUILD AN APK](https://docs.flutter.dev/deployment/android#build-an-apk)<br>
 Small snippet from document:
   
 ```
